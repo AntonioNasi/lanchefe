@@ -167,23 +167,23 @@ header .fundo .div-descreve .produtos .prod-descri a{
     background-image: linear-gradient(90deg, rgba(247, 145, 29, 0) 20%, rgba(66, 21, 24, 0) 80%);
     height: 100vh;
     border-top: solid 1px transparent;
-}
-#quem-somos .fundo-color-s2 #ctn-content .qs-content img{
-    width: 100%;
-    border-radius: 20px;
+    display: flex;
+    place-content: center;
+    place-items: center;
 }
 
 #quem-somos .fundo-color-s2 #ctn-content #quem-somos-txt{
-    max-width: 1024px;
-    margin: 40px auto;
-    background-color: rgba(247, 145, 29, 1);
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 1);
     padding: 20px;
+    border-radius: 5px;
 }
 
 #quem-somos .fundo-color-s2 #ctn-content #quem-somos-txt h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
     color: rgba(0, 0, 0, 1);
+    text-align: center;
 }
 #quem-somos .fundo-color-s2 #ctn-content #quem-somos-txt p{
     font-size: .8rem;
@@ -206,15 +206,21 @@ header .fundo .div-descreve .produtos .prod-descri a{
     height: 100vh;
 }
 #galeria .fc-2{
-    border-top: solid 1px;
+    border-top: solid 1px transparent;
     background-color: rgba(247, 145, 29, .8);
     height: 100vh;
 }
 #galeria .fc-2 h1{
     text-align: center;
-    margin: 40px 0px;
+    margin: 40px 0px 0px 0px;
     font-size: 35px;
     font-weight: 200;
+}
+#galeria .fc-2 p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 40px;
 }
 #galeria .fc-2 #gal-container{
     max-width: 1024px;
@@ -246,4 +252,68 @@ header .fundo .div-descreve .produtos .prod-descri a{
     color: rgba(255, 255, 255, 1);
     padding: 8px 0px;
     margin: -4px 0px;
+}
+
+
+
+
+
+#localizacao{
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/769969/pexels-photo-769969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#localizacao .fc-3{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: rgba(241, 79, 30, .8);
+    height: 100vh;
+
+}
+#localizacao #div-map h2{
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+}
+#localizacao #div-map iframe{
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(66, 21, 24, .5);
+}
+
+
+
+
+
+footer{
+    background-color: rgba(66, 21, 24, 1);
+}
+footer .footer-content{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+}
+footer .footer-content div{
+    width: 340px;
+    padding: 30px;
+}
+footer .footer-content div h2{
+    color: rgba(247, 145, 29, 1);
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer .footer-content div p{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    text-align: center;
+    font-size: 1rem;
 }
